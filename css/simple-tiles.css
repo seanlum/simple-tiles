@@ -1,0 +1,589 @@
+/*     
+    GitHub: seanlum 
+    v0.0.1
+    simple-tiles.css
+*/ 
+
+body {
+    background: skyblue none repeat scroll 0 0;
+    font-family: sans-serif;
+    z-index: 1;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+header {
+    background: #222 none repeat scroll 0 0;
+    color: #ddd;
+}
+header h1 {
+    float: left;
+    width: 500px;
+    font-size: 1.8rem;
+    padding-top: .3rem;
+    padding-left: .4rem;
+    text-transform: uppercase;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: limegreen;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    height: 100%;
+}
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    background: #111 none repeat scroll 0 0;
+    color: limegreen;
+    display: block;
+    margin: 0 0 0 5px;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #111;
+    transition: color 0.5s ease-in 0s, background 0.5s ease-in 0s, border 0.5s ease-in 0s;
+}
+header nav ul li a:hover {
+    background: limegreen none repeat scroll 0 0;
+    color: white;
+}
+main {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 8px;
+    margin: 5px auto 0;
+    overflow: hidden;
+    padding-bottom: 0.5%;
+    width: 1320px;
+    transition: .5s ease-in background;
+}
+main h2 {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    color: limegreen;
+    margin-bottom: 0.5%;
+    padding: 0.4rem;
+    text-shadow: 0 1px 2px #000;
+}
+
+#bg-color-select,
+#bg-color-select-title {
+  display: block;
+  position: relative;
+	width: 400px;
+  margin: .4rem;
+  background: rgba(255, 255, 255, 0.6);
+  height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  color: #111;
+}
+
+#bg-color-select-title {
+	padding-top: .4rem !important;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 0 -3px 4px rgba(0,0,0, 0.4);
+}
+
+#bg-color-select {
+	border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 5px 4px rgba(0,0,0, 0.4);
+}
+
+main article {
+    float: left;
+    left: 0.5%;
+    width: 75%;
+}
+aside {
+    background: transparent none repeat scroll 0 0;
+    float: right;
+    left: -5px;
+    width: 24.2%;
+}
+aside h3 {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    text-shadow: 0 1px 0 #000;
+}
+aside hr {
+    background-color: #aaa;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    height: 2px;
+    margin: 10px 20px 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    margin-top: 5px;
+    position: relative;
+    top: auto;
+    width: 100%;
+}
+
+footer h4 {
+	padding: .4rem;
+  font-size: 1.75rem;
+  background: rgba(0,0,0, 0.5);
+  margin: 8px 0;
+  color: limegreen;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #000;
+  box-shadow: inset 0 -1px 2px 2px rgba(0,0,0, 0.4);
+}
+
+footer .footer-center-content {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.footer-center-content::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* Tiles styling */
+
+main .col-one {
+    width: 237px;
+}
+main .col-two {
+    width: 484px;
+}
+main .col-three {
+    width: 731px;
+}
+main .col-four {
+    width: 978px;
+}
+
+main .col-third {
+		width: 319px
+}
+
+.tile {
+    background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    float: left;
+    font-size: 0.85rem;
+    height: 300px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+main .col-one .tile-title {
+    width: 227px;
+}
+
+main .col-two .tile-title {
+    width: 474px;
+}
+
+main .col-three .tile-title {
+    width: 721px;
+}
+
+main .col-four .tile-title {
+    width: 968px;
+}
+
+main .col-third .tile-title {
+		width: 309px;
+}
+
+.tile-title {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    color: #fff;
+    display: table;
+    letter-spacing: 0.02rem;
+    padding: 10px 0 10px 10px;
+    text-shadow: 0 1px 2px #000;
+    top: 0;
+}
+
+.tile-content {
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+.tile-footer {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    bottom: 0;
+    font-size: 0.8rem;
+    position: absolute;
+    width: 100%;
+}
+.tile-footer button {
+    background: pink none repeat scroll 0 0;
+}
+.tile-footer li > a {
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 45.78%;
+}
+
+aside .tile-footer li > a {
+    width: 46.85%;
+}
+
+main .tile-footer li a {
+    color: #ddd;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #000;
+    transition: background 0.5s ease-in 0s, color 0.5s ease-in 0s;
+}
+main .tile-footer li a:hover {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    color: #00aeff;
+}
+main .tile-footer-sub {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+}
+main .tile-footer-sub::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+main .tile-footer-sub li {
+    color: lightblue;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 45%;
+}
+main .tile-mage-link-rollover {
+    font-size: 0.75rem;
+}
+main .tile-image-link-rollover a span {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    border-top: 1px solid #000;
+    color: #fff;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 12px 0 5px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 2px #000;
+    top: 196px;
+    transition: opacity 0.5s ease-in 0s;
+    width: 237px;
+    z-index: 3;
+}
+main .tile-image-link-rollover a:hover span {
+    opacity: 1;
+}
+main .tile-image-link-rollover span::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+main .tile-image-link-rollover img {
+    color: #fff;
+    display: block;
+    font-size: 0.85rem;
+    height: 221px;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Aside styling */
+
+aside .tile {
+    height: auto !important;
+    margin-top: 10px;
+    padding-bottom: 55px;
+    width: 100%;
+}
+aside .tile::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+aside .tile button {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    border-left: 4px solid #00aeff;
+    color: #fff;
+    float: right;
+    height: 35px;
+    padding: 0 10px;
+    text-shadow: 0 1px 0 #000;
+    transition: background 0.35s ease-in 0s;
+}
+aside .tile label {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    display: block;
+    left: -2px;
+    margin: 5px auto;
+    width: 98%;
+}
+aside .tile label::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+aside .tile label span {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    border: 1px solid #505050;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    font-size: 0.75rem;
+    padding: 0.35rem;
+    text-shadow: 0 1px 2px #000;
+}
+aside .tile label input[type="text"],
+aside .tile label input[type="email"],
+aside .tile label input[type="tel"],
+aside .tile label input[type="url"],
+aside .tile label input[type="search"],
+aside .tile label input[type="datetime"],
+aside .tile label input[type="month"],
+aside .tile label input[type="date"],
+aside .tile label input[type="time"],
+aside .tile label input[type="number"],
+aside .tile label input[type="range"],
+aside .tile label input[type="color"] {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #111;
+    font-size: 0.8rem;
+    height: 25px;
+    padding: 5px 0 5px 8px;
+    border: 1px solid #ddd;
+    margin: 5px auto;
+    width: 100%;
+}
+
+aside .tile label input[type="tel"],
+aside .tile label input[type="search"],
+aside .tile label input[type="color"],
+aside .tile label input[type="range"] {
+	width: 97%;
+}
+
+aside .tile label input[type="email"],
+aside .tile label input[type="url"],
+aside .tile label input[type="search"],
+aside .tile label input[type="datetime"],
+aside .tile label input[type="month"],
+aside .tile label input[type="date"],
+aside .tile label input[type="time"],
+aside .tile label input[type="number"],
+aside .tile label input[type="color"] {
+	top: 0;
+}
+
+aside .tile label select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    height: 25px;
+    margin: 5px 0;
+    width: 100%;
+}
+aside .tile label select optgroup {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    font-size: 0.85rem;
+    padding: 0.25rem;
+}
+aside .tile label select optgroup option {
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 0.35rem;
+}
+aside .tile label p {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    padding: 4px;
+}
+aside .tile label p input[type="checkbox"],
+aside .tile label p input[type="radio"] {
+    top: -4px;
+}
+aside .tile label input[type="submit"] {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    border: 1px solid #505050;
+    border-radius: 8px;
+    color: #fff;
+    float: right;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    text-shadow: 0 1px 2px #000;
+    transition: background 0.35s ease-in 0s, color 0.35s ease-in 0s;
+}
+aside .tile label input[type="submit"]:hover {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    color: #00aeff;
+}
+aside .tile button:hover {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+}
+
+aside .tile-title {
+    width: 313px;
+}
+
+/* Footer tile-image-rollover */
+
+
+footer .tile {
+	left: 5px;
+}
+
+footer .col-one {
+    width: 320px;
+}
+footer .col-two {
+    width: 650px;
+}
+footer .col-three {
+    width: 980px;
+}
+footer .col-four {
+    width: 1310px;
+}
+
+footer .col-third {
+    width: 430px;
+}
+
+footer .tile {
+  	background: rgba(0,0,0, 0.4) !important;
+    color: #fff;
+    box-shadow: inset 0 -2px 2px 2px rgba(0,0,0, 0.8);
+}
+
+footer .col-one .tile-title {
+    width: 309px;
+}
+
+footer .col-two .tile-title {
+    width: 638px;
+}
+
+footer .col-three .tile-title {
+    width: 968px;
+}
+
+footer .col-four .tile-title {
+    width: 1299px;
+}
+
+footer .col-third .tile-title {
+	width: 420px;
+}
+
+footer .tile-title {
+	background: rgba(0,0,0, 0.8);
+  color: #00AEFF;
+}
+
+footer .tile-content {
+	background: transparent;
+}
+
+footer .tile-footer li > a {
+  width: 47.65%;
+  padding-bottom: 8px;
+}
+
+footer .col-one .tile-footer li > a {
+	width: 46.6%;
+}
+
+footer .col-two .tile-footer li > a {
+	width: 48.4%;
+}
+
+footer .col-three .tile-footer li > a {
+	width: 48.9%;
+}
+
+footer .col-four .tile-footer li > a {
+	width: 49.2%;
+}
+
+footer .tile-footer li a {
+    color: #ddd;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #000;
+    transition: background 0.5s ease-in 0s, color 0.5s ease-in 0s;
+}
+footer .tile-footer li a:hover {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    color: #00aeff;
+}
+footer .tile-footer-sub {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+}
+footer .tile-footer-sub::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+footer .tile-footer-sub li {
+    color: lightblue;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 45%;
+}
+footer .tile-mage-link-rollover {
+    font-size: 0.75rem;
+}
+footer .tile-image-link-rollover a span {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    border-top: 1px solid #000;
+    color: #fff;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    opacity: 0;
+    padding: 12px 0 5px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 2px #000;
+    top: 196px;
+    transition: opacity 0.5s ease-in 0s;
+    width: 318px;
+    z-index: 3;
+}
+footer .tile-image-link-rollover a:hover span {
+    opacity: 1;
+}
+footer .tile-image-link-rollover span::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+footer .tile-image-link-rollover img {
+    color: #fff;
+    display: block;
+    font-size: 0.85rem;
+    height: 217px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
